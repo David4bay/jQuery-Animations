@@ -16,6 +16,7 @@ html, body {
 
 @import 'extensions';
 
+
 body {
     font-size: 62.5%;
     background: linear-gradient(hsla(0, 100%, 50%, 0.596), hsla(300, 100%, 25%, 0.5));
@@ -82,13 +83,19 @@ main {
         display: grid;
         height: 100vh;
         align-items: stretch;
+        margin-bottom: 3rem;
         grid-template-columns: 0.25fr 1fr 0.25fr;
+        
 
          aside.left {
             display: grid;
             grid-area: 1;
          }
     }
+}
+
+li.aside-card {
+    @extend %new-card;
 }
 
 section.main {
@@ -134,7 +141,8 @@ article.last {
 
 section.testimonials {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 10rem;
     width: 100%;
 
     div.container {

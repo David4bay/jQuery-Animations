@@ -1,3 +1,12 @@
-%card {
-    
+%new-card {
+  width: 200px;
+  max-height: 250px;
+  margin: 1rem auto;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.23) 10%, rgba(31, 31, 31, 0) 90%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+  cursor: pointer;
+  transition: all .3s;
+  list-style: none;
 }
